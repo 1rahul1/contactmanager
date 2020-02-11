@@ -8,6 +8,7 @@ class AddContact extends Component {
   };
 
   render() {
+    const { name, email, phone } = this.state;
     return (
       <div className="mb-3">
         <div className="card-header">Add Contact</div>
@@ -20,6 +21,7 @@ class AddContact extends Component {
                 className="form-control form-control-lg"
                 placeholder="Enter Name ..."
                 name="name"
+                value={name}
               />
             </div>
             <div className="form-group">
@@ -29,6 +31,7 @@ class AddContact extends Component {
                 className="form-control form-control-lg"
                 placeholder="Enter Email ..."
                 name="email"
+                value={email}
               />
             </div>
             <div className="form-group">
@@ -38,6 +41,7 @@ class AddContact extends Component {
                 className="form-control form-control-lg"
                 placeholder="Enter Phone ..."
                 name="phone"
+                value={phone}
               />
             </div>
             <input
